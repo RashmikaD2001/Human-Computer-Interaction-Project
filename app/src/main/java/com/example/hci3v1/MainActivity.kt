@@ -38,7 +38,15 @@ class MainActivity : AppCompatActivity() {
         radarChart = findViewById(R.id.radarChart)
 
         scoreViewModel.score.observe(this, Observer { score ->
-            scoreTextView.text = "Score: $score"
+
+            var textToDisplay = "Score: $score"
+
+            if(score >= 0){
+                textToDisplay += "\nKeep the score positive. Don't get distract from social media"
+            }else{
+                textToDisplay += "\nYour score is bad. Try to focus and don't use social media"
+            }
+            scoreTextView.text = textToDisplay
         })
 
         btnStartBlocker.setOnClickListener {
