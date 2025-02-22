@@ -4,7 +4,7 @@ import okhttp3.*
 import java.io.IOException
 
 object NetworkConfig {
-    private const val ESP_IP = "http://10.32.11.26"
+    private const val ESP_IP = "http://192.168.27.202"
 
     private val client = OkHttpClient()
 
