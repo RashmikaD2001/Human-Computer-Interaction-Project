@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Social Media Blocker V3</string>
+    <string name="accessibility_service_description">This service helps block social media apps for better focus</string>
+</resources>
